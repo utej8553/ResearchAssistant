@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 15px;
+    font-family:Arial, Helvetica, sans-serif; 
+    background-color: #080a12;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+
+}
+
+.header h2{
+    margin: 0;
+    color:white;
+    font-weight: bold;
+
+}
+
+.actions{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+button {
+    padding: 10px 18px;
+    background-color: #007AF5;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* transition: hover 0.3s ease-in-out; */
+    
+}
+
+/* Hover effect */
+button:hover {
+    color: black; /* Changes to black */
+    background-color: rgba(255, 255, 255, 0.995); /* Text color changes to white */
+    /* transform: scale(1.1); Slightly enlarges the button */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+button:active{
+    color: black; /* Changes to black */
+    background-color: rgb(255, 255, 255); /* Text color changes to white */
+    transform: scale(1.2); /* Slightly enlarges the button */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Active effect (when button is clicked) */
+button:active {
+    transform: scale(1.05); /* Slightly reduces scale when pressed */
+}
+
+
+
+
+
+.notes h3{
+    color:  #C0BEC6;
+    
+}
+.notes button{
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.input{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    .textarea {
+        background-color: #424861;
+        border: none;
+        
+        font-size: 16px;
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        height: 150px;
+        position: relative;
+    }
+
+    /* Change placeholder color */
+    .textarea::placeholder {
+        color: #aaaaaa; /* Light gray */
+        opacity: 1; /* Ensures full visibility */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* Hover effect */
+    .textarea:hover {
+        border-color: #4a76ee; /* Changes border on hover */
+        box-shadow: 0px 0px 5px #4a76ee;
+    }
+
+    /* Focus effect */
+    .textarea:focus {
+        border-color: #ff5733; /* Different color when focused */
+        box-shadow: 0px 0px 8px #ff5733;
+    }
+
+#results{
+    padding: 10px;
+    /* background-color: #ffffff74; */
+    border-radius: 4px;
+    margin-top: 20px;
+    
+}
+
+.result-item{
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    background-color: rgb(66,72,97);
+
+}
+
+.result-content{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
